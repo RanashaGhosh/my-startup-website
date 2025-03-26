@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Ogre's Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function togglebox() {
+            var chatbox = document.getElementById("aiChatbox");
+            chatbox.style.display = chatbox.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="des.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="product-container">
+        <img src="bamboo_salt.jpg" alt="Bamboo salt" class="product-img-main">
+        <div class="product-info">
+            <h1>Bamboo salt</h1>
+            <p class="product-price">₹800.00</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Rich in essential minerals like calcium, potassium, and magnesium</li>
+                <li>May help improve digestion and boost immunity</li>
+                <li>Contains antioxidants that protect against free radicals</li>
+            </ul>
+            <h3>Restrictions:</h3>
+            <ul>
+                <li>Individuals with high blood pressure or specific dietary restrictions should consult their doctor before using it.</li>
+                <li>Has a unique, sometimes bitter or smoky taste that may not be appealing to everyone.</li>
+             </ul>
+            <a href="#" class="buy-button">Buy Now</a>
+        </div>
+    </div>
+    <div class="ai-assistant" onclick="togglebox()">💬 AI Dr. Assistant</div>
+    
+    <div class="ai-chatbox" id="aiChatbox">
+        <p>Ask me anything about health & nutrition!</p>
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+    </div>
+</body>
+</html>

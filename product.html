@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Ogre's Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function searchProducts() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let products = document.getElementsByClassName('product');
+            
+            for (let product of products) {
+                let name = product.getElementsByTagName('h2')[0].innerText.toLowerCase();
+                product.style.display = name.includes(input) ? 'block' : 'none';
+            }
+        }
+        
+        function togglebox() {
+            var chatbox = document.getElementById("aiChatbox");
+            chatbox.style.display = chatbox.style.display === "block" ? "none" : "block";
+        }
+    
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="des.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <h1>Our Products</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-box" placeholder="Search for products...">
+        <button onclick="searchProducts()" class="search-button">Search</button>
+    </div>
+    
+    <div class="products">
+        <div class="product" onclick="location.href='product1.html'">
+            <img src="bamboo_salt.jpg" alt="Bamboo salt">
+            <h2>Bamboo salt</h2>
+            <p>Rich in essential minerals like calcium, potassium, and magnesium.</p>
+        </div>
+        <div class="product" onclick="location.href='product2.html'">
+            <img src="moringa leaf.jpg" alt="Pre-Workout">
+            <h2>Moringa Leaf Powder</h2>
+            <p>Contains vitamins A, C, E, and B-complex</p>
+        </div>
+        <div class="product" onclick="location.href='product3.html'">
+            <img src="ogre's blood.jpg" alt="BCAA">
+            <h2>ogre's blood</h2>
+            <p>Boosts Blood Flow & Oxygen Delivery</p>
+        </div>
+        
+    </div>
+    <div class="ai-assistant" onclick="togglebox()">💬 AI Dr. Assistant</div>
+
+    <div class="ai-chatbox" id="aiChatbox">
+        <p>Ask me anything about health & nutrition!</p>
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+</body>
+</html>
+
+        

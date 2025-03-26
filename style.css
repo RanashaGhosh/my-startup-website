@@ -1,0 +1,234 @@
+/*home page*/
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #8B0000;
+    padding: 15px;
+    display: flex;
+    justify-content:center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #B03A2E;
+}
+.logo {
+    width: 300px;
+    margin: 20px auto;
+}
+.content {
+    padding: 50px;
+}
+/*product page*/
+
+.search-container {
+    margin: 20px 0;
+}
+.search-box {
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+.search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8B0000;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+.search-button:hover {
+    background-color: #B03A2E;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.product {
+    background: #1C1C1C;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+}
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+/*about page*/
+.section {
+    margin: 30px auto;
+    max-width: 800px;
+    background: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+    }
+.section2{
+    text-align: left;
+}    
+/*contact page*/
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-form button {
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #B03A2E;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .content {
+        padding: 30px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+}
+/*product1 page*/
+.product-container {
+    margin: 50px auto;
+    max-width: 800px;
+    background: #1C1C1C;
+    padding: 20px;
+    border-radius: 10px;
+}
+.product-img {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+.product-img-small{
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-img-small:hover {
+    border: 2px solid #FFD700;
+}
+.product-img-main {
+    width: 300px;
+    border-radius: 10px;
+}
+.product-info {
+    text-align: left;
+    margin-top: 20px;
+}
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700;
+}
+.buy-button {
+    background-color: #8B0000;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.buy-button:hover {
+    background-color: #B03A2E;
+}
+.ai-assistant {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8B0000;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+.ai-chatbox {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background: #1C1C1C;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+.ai-chatbox input {
+    width: 93%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.ai-chatbox button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ai-chatbox button:hover {
+    background-color: #B03A2E;
+}
+.ai-chatbox .chat {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ogre's Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function togglebox() {
+            var chatbox = document.getElementById("aiChatbox");
+            chatbox.style.display = chatbox.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="des.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="content">
+        <h1>About Ogre's Nutrition</h1>
+        <div class="section">
+            <h2>Who We Are</h2>
+            <p>At Ogre's Nutrition, we are committed to providing top-quality supplements to help you reach your fitness goals. Whether you're looking to build muscle, increase endurance, or recover faster, we have the perfect products for you.</p>
+        </div>
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower athletes and fitness enthusiasts with high-performance supplements. We focus on quality, effectiveness, and innovation to help you unleash your inner beast.</p>
+        </div>
+        <div class="section">
+            <h2>Why Choose Us?</h2>
+            <div class="section2"><ul>
+                <li>Premium quality ingredients</li>
+                <li>Scientifically formulated products</li>
+                <li>Trusted by athletes and bodybuilders</li>
+                <li>Commitment to excellence and customer satisfaction</li>
+            </ul></div>
+        </div>
+    </div>
+    <div class="ai-assistant" onclick="togglebox()">💬 AI Dr. Assistant</div>
+
+    <div class="ai-chatbox" id="aiChatbox">
+        <p>Ask me anything about health & nutrition!</p>
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+</body>
+</html>

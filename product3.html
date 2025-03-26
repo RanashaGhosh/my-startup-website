@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Ogre's Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function togglebox() {
+        var chatbox = document.getElementById("aiChatbox");
+        chatbox.style.display = chatbox.style.display === "block" ? "none" : "block";
+    }
+</script>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="des.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="product-container">
+        <div class="product-images">
+        <img src="bitter root.jpg" alt="bitter root" class="product-img-small">
+        <img src="ogre's blood.jpg" alt="ogre's blood" class="product-img-main">
+        </div>
+        <div class="product-info">
+            <h1>ogre's blood powder</h1>
+            <p class="product-price">₹700.00</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Boosts Blood Flow & Oxygen Delivery</li>
+                <li>Increases Muscle Strength & Endurance</li>
+                <li>Reduces Inflammation & Prevents Muscle Damage</li>
+            </ul>
+            <h3>Restrictions:</h3>
+            <ul>
+                <li> Beetroot lowers blood pressure, so people with hypotension (low BP) should limit intake.</li>
+                <li>Contains natural sugars, so people with diabetes should monitor blood sugar levels.</li>
+             </ul>
+            <a href="#" class="buy-button">Buy Now</a>
+        </div>
+    </div>
+    <div class="ai-assistant" onclick="togglebox()">💬 AI Dr. Assistant</div>
+
+    <div class="ai-chatbox" id="aiChatbox">
+        <p>Ask me anything about health & nutrition!</p>
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+</body>
+</html>

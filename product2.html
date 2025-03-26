@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Ogre's Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function togglebox() {
+            var chatbox = document.getElementById("aiChatbox");
+            chatbox.style.display = chatbox.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="des.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="product-container">
+        <img src="moringa leaf.jpg" alt="Moringa leaf Powder" class="product-img-main">
+        <div class="product-info">
+            <h1>Moringa Leaf Powder</h1>
+            <p class="product-price">$100.00</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Rich in calcium, potassium, iron, and magnesium</li>
+                <li>Contains quercetin, chlorogenic acid, and beta-carotene, which help fight oxidative stress</li>
+                <li>Reduces the risk of heart disease</li>
+            </ul>
+            <h3>Restrictions:</h3>
+            <ul>
+                <li>Avoid during pregnancy unless advised by a doctor</li>
+                <li>High fiber content may lead to gas, bloating, or diarrhea if consumed in excess</li>
+             </ul>
+            <a href="#" class="buy-button">Buy Now</a>
+        </div>
+    </div>
+    <div class="ai-assistant" onclick="togglebox()">💬 AI Dr. Assistant</div>
+        
+    <div class="ai-chatbox" id="aiChatbox">
+        <p>Ask me anything about health & nutrition!</p>
+        <input type="text" placeholder="Type your question...">
+        <button>Send</button>
+    </div>
+</body>
+</html>
